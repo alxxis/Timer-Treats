@@ -1,8 +1,11 @@
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import React from 'react';
 import {useState, useEffect, useRef} from "react";
 
-export default function Timer(props, {treat = "Sesame Bun", duration = 2*60*60*1000}){
+export default function Timer(props){
+    const location = useLocation();
+    const{clockTime} = location.state || {clockTime:0};
+    const treat = props.treat || "Sesame Bun";
     const Ref = useRef(null);
     const [timer, setTimer] = useState("00:00:00");
 
@@ -74,6 +77,7 @@ export default function Timer(props, {treat = "Sesame Bun", duration = 2*60*60*1
     return(
         <div>
             <div>{timer}</div>
+            <div>{clockTime}</div>
             <button onClick={onClickReset}>Reset</button>
             <div> img</div>
             <div>{treat}</div>
