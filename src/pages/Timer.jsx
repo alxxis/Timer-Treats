@@ -4,7 +4,8 @@ import {useState, useEffect, useRef} from "react";
 
 export default function Timer(props){
     const location = useLocation();
-    const{clockTime} = location.state || {clockTime:0};
+    const{time} = location.state || {time:0};
+    console.log("Location State:", location.state);
     const treat = props.treat || "Sesame Bun";
     const Ref = useRef(null);
     const [timer, setTimer] = useState("00:00:00");
@@ -42,7 +43,7 @@ export default function Timer(props){
         // If you adjust it you should also need to
         // adjust the Endtime formula we are about
         // to code next
-        setTimer("00:15:00");
+        setTimer("00:" + `${time}` + ":00");
 
         // If you try to remove this line the
         // updating of timer Variable will be
@@ -59,7 +60,7 @@ export default function Timer(props){
 
         // This is where you need to adjust if
         // you entend to add more time
-        deadline.setSeconds(deadline.getSeconds() + 900);
+        deadline.setSeconds(deadline.getSeconds() + parseInt(time)*60);
         return deadline;
     };
 
@@ -73,11 +74,12 @@ export default function Timer(props){
         clearTimer(getDeadTime());
     };
 
+    console.log("Time:" + {time});
 
     return(
         <div>
             <div>{timer}</div>
-            <div>{clockTime}</div>
+            <div>{time}m</div>
             <button onClick={onClickReset}>Reset</button>
             <div> img</div>
             <div>{treat}</div>
