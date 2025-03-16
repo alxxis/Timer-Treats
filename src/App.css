@@ -1,6 +1,7 @@
 .website-container{
   height:932px;
   width:430px;
-  background-color: burlywood;
+  background: rgb(239,207,150);
+  background: radial-gradient(ellipse, rgba(239,207,150,1) 0%, rgba(238,232,222,1) 70%);
   margin:auto;
 }

@@ -43,7 +43,12 @@ export default function Timer(props){
         // If you adjust it you should also need to
         // adjust the Endtime formula we are about
         // to code next
-        setTimer("00:" + `${time}` + ":00");
+        if(parseInt(time)<60){
+            setTimer("00:" + `${time}` + ":00");
+        } else{
+            const min = time%60 <10 ? "0" + `${time%60}` : `${time%60}`;
+            setTimer(`${time/60}` + ":" + min + ":00");
+        }
 
         // If you try to remove this line the
         // updating of timer Variable will be

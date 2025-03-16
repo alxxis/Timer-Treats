@@ -1,5 +1,6 @@
 h1, h2, h3, h4{
     font-family: 'Bogart Trial';
+    font-weight: 450;
 }
 
 .treat-option-container{
@@ -10,4 +11,58 @@ h1, h2, h3, h4{
 .row{
     display:flex;
     flex:1;
+}
+
+.timer-treats-title{
+    text-align:center;
+    font-weight:400;
+    padding-top:115px;
+    padding-bottom:50px;
+}
+
+.bake-title{
+    font-size:50px;
+    font-weight:400;
+    text-align:center;
+    padding-left:100px;
+    padding-right:100px;
+    line-height:50px;
+}
+
+.home-desc{
+    color: #666666;
+    padding-left:80px;
+    padding-right:80px;
+    text-align:center;
+}
+
+.start-focusing-button{
+    background-color: #dbc9a4;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+    font-family:'Bogart Trial';
+    text-decoration:none;
+    color:black;
+    border-radius:15px;
+}
+
+.matcha-image-on-bake{
+    position:absolute;
+    top:360px;
+    right:130px;
+}
+
+.sesame-image-on-bake{
+    position:absolute;
+    top:310px;
+    left:130px;
+}
+
+.thai-image-on-bake{
+    position:absolute;
+    top:220px;
+    right:180px;
 }
