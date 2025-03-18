@@ -5,6 +5,7 @@
     padding: 10px;
     margin:10px;
     flex:1;
+    border-radius:7%;
 }
 
 .component-container:hover{
@@ -29,4 +30,15 @@
     width:100%;
     max-width:640px;
     background-color:#fff4ce;
+}
+
+.time-selection-container{
+    background-color: #eddcba;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family:'Bogart Trial';
+    border-radius:15px;
+    width:fit-content;
 }

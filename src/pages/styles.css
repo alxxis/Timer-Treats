@@ -3,6 +3,10 @@ h1, h2, h3, h4{
     font-weight: 450;
 }
 
+.choose-treats-page-container{
+    font-family: 'Bogart Trial';
+}
+
 .treat-option-container{
     display:flex;
     flex-direction:column;
@@ -50,19 +54,30 @@ h1, h2, h3, h4{
 }
 
 .matcha-image-on-bake{
-    position:absolute;
-    top:360px;
-    right:130px;
+    position:relative;
+    bottom:120px;
+    left:265px;
 }
 
 .sesame-image-on-bake{
-    position:absolute;
-    top:310px;
-    left:130px;
+    position:relative;
+    bottom:180px;
+    left:42px;
 }
 
 .thai-image-on-bake{
-    position:absolute;
-    top:220px;
-    right:180px;
+    position:relative;
+    bottom:270px;
+    left:105px;
+}
+
+.choose-your-treat-title{
+    text-align: center;
+    font-weight:300;
+    font-size:40px;
+    padding-top:30px;
+    padding-left:110px;
+    padding-right:110px;
+    padding-bottom:5px;
+    line-height:40px;
 }

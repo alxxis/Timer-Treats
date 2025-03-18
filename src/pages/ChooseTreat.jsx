@@ -1,4 +1,5 @@
 import TreatOption from "../components/TreatOption"
+import './styles.css'
 import ConfirmChoice from "../components/ConfirmChoice"
 import {useState} from 'react';
 import {Link} from 'react-router-dom'
@@ -10,9 +11,10 @@ export default function ChooseTreat(){
     const[description, setDescription] = useState("Soft bread topped with sesame seeds, often filled with beans, or sweet pastes");
     
     return(
-        <div>
-            <Link to="/">&lt;</Link>
-            <h2>Choose your treat!</h2>
+        <div className="choose-treats-page-container">
+            <link href="https://fonts.cdnfonts.com/css/bogart-trial" rel="stylesheet"/>
+            <Link style={{textDecoration:"none", color:"black", paddingLeft:"20px", fontSize:"30px"}}to="/">&lt;</Link>
+            <h1 className="choose-your-treat-title">Choose your treat!</h1>
             <div className="treat-option-container">
                 <div className="row">
                     <TreatOption setIsPopped={setIsPopped} setTime={setTime}/>

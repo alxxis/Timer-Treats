@@ -5,7 +5,7 @@ export default function TreatOption({setIsPopped, setTime, setTreat, setDescript
     const displayedTime = parseInt(time) >=60 ? time/60 : time;
     return(
         <div className="component-container" onClick={() => {setIsPopped(true); setTime(time); setTreat(treat); setDescription(description)}}>
-            <div>{displayedTime}{unit}</div>
+            <div className="time-selection-container">{displayedTime}{unit}</div>
             <p>image</p>
             <p>{treat}</p>
         </div>
