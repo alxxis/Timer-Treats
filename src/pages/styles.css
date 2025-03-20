@@ -4,7 +4,7 @@ h1, h2, h3, h4{
 }
 
 .choose-treats-page-container{
-    font-family: 'Bogart Trial';
+    font-family: 'Bogart Trial', Consolas;
 }
 
 .treat-option-container{

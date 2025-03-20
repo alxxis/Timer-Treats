@@ -1,15 +1,19 @@
 .component-container{
     width: 175px;
     height:150px;
-    background-color: beige;
+    background-color: #F5E9D1;
     padding: 10px;
+    padding-bottom:20px;
     margin:10px;
     flex:1;
     border-radius:7%;
+    box-shadow:1px 1px 5px 1px #ddd3ba;
+    text-align:center;
 }
 
 .component-container:hover{
     cursor:pointer;
+    box-shadow: 1px 1px 5px 1px #674d25;
 }
 
 .popup{
@@ -33,12 +37,12 @@
 }
 
 .time-selection-container{
-    background-color: #eddcba;
+    background-color: #e7d7b9;
     padding-top:5px;
     padding-bottom:5px;
     padding-left:10px;
     padding-right:10px;
-    font-family:'Bogart Trial';
+    font-family: 'Arial', 'Bogart Trial';
     border-radius:15px;
     width:fit-content;
 }
